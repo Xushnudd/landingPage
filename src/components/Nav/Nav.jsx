@@ -16,7 +16,7 @@ const Nav = () => {
                     <FontAwesomeIcon icon={faBars} className="cursor-pointer" />
                 </div>
             </div>
-            <div className="py-4.5 px-5 border-b border-gray-300 flex justify-between items-center cursor-pointer sm:px-8 lg:px-12">
+            <div className="py-4.5 px-5 border-b border-gray-300 flex justify-between items-center cursor-pointer sticky top-0 left-0 sm:px-8 lg:px-12">
                 <span className="text-md text-gray-700 uppercase">Point of sale</span>
                 <FontAwesomeIcon icon={faAngleDown} />
             </div>
