@@ -31,7 +31,7 @@ let data = [
 ]
 
 const PosFeatures = () => (
-    <div className="w-full px-5 py-10 bg-gray-200">
+    <div className="w-full px-5 py-10 bg-lime-50">
         <div className="w-full flex flex-col items-center">
             <div>
                 <h3 className="text-xl">POS FEATURES</h3>

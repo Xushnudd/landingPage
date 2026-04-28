@@ -1,5 +1,6 @@
 import Banner from "./components/Banner";
 import Brands from "./components/Brands/Brands"
+import GetStarted from "./components/GetStarted";
 import Header from "./components/Header"
 import Look from "./components/Look";
 import PosFeatures from "./components/PosFeatures";
@@ -8,6 +9,7 @@ import Retail from "./components/Retail";
 import StoreMarket from "./components/storeMarket/StoreMarket";
 import Support from "./components/Support/Support";
 import SupportSection from "./components/supportSection";
+import SwitchBanner from "./components/SwitchBanner";
 
 const brands = () => {
     let n = [];
@@ -16,6 +18,16 @@ const brands = () => {
     }
     return n
 }
+
+const section = [
+    <Look />,
+    <SupportSection />,
+    <PosRetail />,
+    <Retail />,
+    <PosFeatures />,
+    <GetStarted />,
+    <SwitchBanner />,
+]
 
 function App() {
     return (
@@ -30,11 +42,9 @@ function App() {
                 </div>
             </div>
             <div className="my-30">
-                <section><Look /></section>
-                <section><SupportSection /></section>
-                <section><PosRetail /></section>
-                <section><Retail /></section>
-                <section><PosFeatures /></section>
+                {section.map((el, i) => (
+                    <section key={i}>{el}</section>
+                ))}
             </div>
         </div>
     )
