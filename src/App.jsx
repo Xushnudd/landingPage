@@ -4,6 +4,7 @@ import Header from "./components/Header"
 import Look from "./components/Look";
 import StoreMarket from "./components/storeMarket/StoreMarket";
 import Support from "./components/Support/Support";
+import SupportSection from "./components/supportSection";
 
 const brands = () => {
     let n = [];
@@ -27,6 +28,7 @@ function App() {
             </div>
             <div className="my-30">
                 <section><Look /></section>
+                <section><SupportSection /></section>
             </div>
         </div>
     )
