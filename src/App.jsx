@@ -5,6 +5,7 @@ import Header from "./components/Header"
 import Look from "./components/Look";
 import PosFeatures from "./components/PosFeatures";
 import PosRetail from "./components/PosReatail";
+import ResourceRetail from "./components/ResourceRetail/ResourceRetail";
 import Retail from "./components/Retail";
 import StoreMarket from "./components/storeMarket/StoreMarket";
 import Support from "./components/Support/Support";
@@ -27,6 +28,7 @@ const section = [
     <PosFeatures />,
     <GetStarted />,
     <SwitchBanner />,
+    <ResourceRetail />
 ]
 
 function App() {
