@@ -2,6 +2,9 @@ import Banner from "./components/Banner";
 import Brands from "./components/Brands/Brands"
 import Header from "./components/Header"
 import Look from "./components/Look";
+import PosFeatures from "./components/PosFeatures";
+import PosRetail from "./components/PosReatail";
+import Retail from "./components/Retail";
 import StoreMarket from "./components/storeMarket/StoreMarket";
 import Support from "./components/Support/Support";
 import SupportSection from "./components/supportSection";
@@ -29,6 +32,9 @@ function App() {
             <div className="my-30">
                 <section><Look /></section>
                 <section><SupportSection /></section>
+                <section><PosRetail /></section>
+                <section><Retail /></section>
+                <section><PosFeatures /></section>
             </div>
         </div>
     )
