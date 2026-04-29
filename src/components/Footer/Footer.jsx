@@ -68,15 +68,15 @@ let icons = [
 
 const Footer = () => (
     <footer className="p-15">
-        <div className="mb-10 w-full border-b border-gray-400 pb-10 flex justify-between"><Icon iconHeight={50} />{data.map((el, i) => ( <Section head={el.head} data={el.data} /> ))}</div>
+        <div className="mb-10 w-full border-b border-gray-400 pb-10 flex justify-between flex-wrap"><div><Icon iconHeight={50} /></div>{data.map((el, i) => ( <Section head={el.head} data={el.data} /> ))}</div>
         <div>
             <div><FontAwesomeIcon icon={faGlobe} /> USA | English <FontAwesomeIcon icon={faAngleDown} /></div>
             <div className="w-full flex gap-5 flex-wrap">
-                <div className="flex items-center gap-1">
-                    <div className="flex gap-10">{list.map((el, i) => ( <a href="/" key={i}>{el}</a> ))}</div>
+                <div className="flex items-center gap-1 flex-wrap">
+                    <div className="flex gap-10 flex-wrap">{list.map((el, i) => ( <a href="/" key={i}>{el}</a> ))}</div>
                     <div className="border-2 border-blue-600 rounded-full flex items-center overflow-hidden scale-60"><FontAwesomeIcon icon={faCheck} className="text-blue-600 p-1" /> <FontAwesomeIcon icon={faX} className="text-white bg-blue-600 p-1" /></div>
                 </div>
-                <div className="flex gap-2">{icons.map((el, i) => ( <div key={i} className="w-10 h-10 text-3xl border rounded-full flex items-center justify-center"><FontAwesomeIcon icon={el} /></div> ))}</div>
+                <div className="flex gap-2 flex-wrap">{icons.map((el, i) => ( <div key={i} className="w-10 h-10 text-3xl border rounded-full flex items-center justify-center"><FontAwesomeIcon icon={el} /></div> ))}</div>
             </div>
         </div>
     </footer>
